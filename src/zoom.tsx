@@ -234,7 +234,7 @@ export function Zoom(props: Props) {
       if (zoomListContext) runOnJS(zoomListContext.onZoomEnd)();
       if (onZoomEnd) runOnJS(onZoomEnd)();
     }
-  }, [zoomListContext, onZoomBegin, onZoomEnd]);
+  }, [zoomListContext, onZoomBegin, onZoomEnd, isZoomed]);
 
   const style = useAnimatedStyle(() => {
     return {
